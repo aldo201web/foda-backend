@@ -1,4 +1,4 @@
-package mx.uv.foda.config;
+package mx.uv.foda.foda_backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
