@@ -1,4 +1,4 @@
-package mx.uv.foda.foda_backend.config;
+package mx.uv.foda.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,13 +15,11 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                                "http://localhost:4200",
-                                "https://*.web.app",
-                                "https://*.firebaseapp.com"
+                                "https://fodaapp-aldo.web.app",
+                                "https://fodaapp-aldo.firebaseapp.com"
                         )
-                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
-                        .allowCredentials(false);
+                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedHeaders("*");
             }
         };
     }
