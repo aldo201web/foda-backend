@@ -1,4 +1,4 @@
-package mx.uv.foda.dto;
+package mx.uv.foda.foda_backend.dto;
 
 public class LoginResponse {
     private boolean ok;
